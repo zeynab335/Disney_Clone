@@ -1,0 +1,9 @@
+:root{
+    --BACKGROUND-SURFACE-DEFAULT: #16181f;
+}
+
+
+body{
+    min-height: 100vh;
+    background-color: var(--BACKGROUND-SURFACE-DEFAULT);
+}
