@@ -1,0 +1,39 @@
+[
+    {
+        "url" : "../Assets/Images/Header/Avatar.jpeg",
+        "title" : "../Assets/Images/Header/Title/avatar.png",
+        "year" : 2022,
+        "duration" : "38m",
+        "availableTo": "13+",
+        "details":"A look at \"Avatar: The Way of Water.\" ",
+        "class":"active"
+    },
+    {
+        "url" : "../Assets/Images/Header/ExatraOrdinary.jpeg",
+        "title" : "../Assets/Images/Header/Title/Exatra.png",
+        "year" : 2023,
+        "duration" : "1h 47m",
+        "details":"Armed with a bit of hope and a lot of desperation, Jen begins her journey to find her superpower.",
+        "availableTo": "18+",
+        "class":""
+
+    },
+    {
+        "url" : "../Assets/Images/Header/Darby.jpeg",
+        "title" : "../Assets/Images/Header/Title/darby.png",
+        "year" : 2022,
+        "duration" : "1h 40m",
+        "availableTo": "16+",
+        "details":"A supernatural teen comedy about a high school student who moonlights as a spiritual messenger.",
+        "class":""
+        
+    },
+    {
+        "url" : "../Assets/Images/Header/Menu.jpeg",
+        "title" : "../Assets/Images/Header/Title/Menu.png",
+        "year" : 2022,
+        "duration" : "1h 47m",
+        "availableTo": "18+",
+        "class":""
+    }
+]

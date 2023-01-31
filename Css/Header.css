@@ -15,7 +15,7 @@ header{
     position: absolute;
     top: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.3);
 }
 
 .carousel-item-overlay:first-of-type{
@@ -31,7 +31,7 @@ header{
 
 }
 .carousel-indicators [data-bs-target]{
-    width: 150px;
+    width: 100px;
     height: 200px;
     background: none;
     opacity: 1;   
@@ -39,10 +39,11 @@ header{
 
 
 .carousel-indicators-img{
-    width: 95%;
+    width: 100%;
     margin-left: 20px;
     border-radius: 10px;
     transition: all 1s;
+
 }
 .carousel-indicators-img:hover{
     transform: scale(1.09) translatey(-10px);
