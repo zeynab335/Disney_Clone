@@ -17,8 +17,19 @@ const response = fetch('../Data/data.json').then(function(response){
                     <div class="carousel-item ${element.class ? element.class: ''}">
                         <img src=${element.url} class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>${element.duration}</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <img  src=${element.title} class="d-block position-absoulte" alt="..." />
+                            <div>
+                                <span class="h5">${element.year}</span>
+                                <span class="h5">${element.duration}</span>
+                                <span class="h5">${element.languages}</span>
+                                <span class="availableTo"> ${element.availableTo} </span>
+                                <p class="category h5"> ${element.category   } </p>
+
+                            </div>
+                            <div class="d-flex w-100 ">
+                                <button class="subsribe btn btn-light me-2 py-4 mt-3 fs-3 "> Subscripe to Watch </button>
+                                <button class="add-to-Fav btn btn-dark fs-1 px-4 py-0 my-0" > + </button>
+                            </div>
                         </div>
                     </div>
                     `
