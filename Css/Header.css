@@ -1,0 +1,123 @@
+header{
+    height: 80vh;
+}
+
+.carousel{
+    height: 750px!important;
+    position: relative;
+    padding-left: 100px;
+}
+.carousel  .carousel-item{
+    height: 700px!important;
+}
+.carousel-item-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to right,  rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0));
+    color: white;
+}
+
+.carousel-caption{
+    z-index: 100;
+    position: absolute;
+    top: 20%;
+    left: -20px;
+    width: 40%;
+}
+
+.carousel-caption div{
+    padding: 10px;
+    text-align: left;
+    margin-left: 100px;
+}
+.carousel-caption img{
+    padding-left: 100px;
+    margin-bottom: 50px;
+    width: 100%!important;
+    max-height: 40%;
+}
+
+.carousel-caption p {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.subsribe{
+    width: 85%!important;
+}
+
+
+
+.carousel-caption span {
+    position: relative;
+    padding-right: 5px;
+    margin: 50px 10px 50px 10px ;
+
+}
+
+.carousel-caption span:not(span:last-of-type):after {
+    content: " ";
+    position: absolute;
+    top: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius:50% ;
+    background-color: white;
+    margin-left: 10px;
+}
+.carousel-caption .category{
+    display: block;
+    margin-top: 25px;
+}
+.carousel-caption .availableTo { 
+    background-color: hsla(0,0%,100%,.08);
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.carousel-indicators{
+    width: 95%;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    justify-content: flex-end!important;
+}
+.carousel-indicators [data-bs-target]{
+    width: 100px;
+    height: 200px;
+    background: none;
+    opacity: 1;   
+}
+
+
+.carousel-indicators-img{
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 10px;
+    transition: all 1s;
+
+}
+.carousel-indicators-img:hover{
+    transform: scale(1.09) translatey(-10px);
+}
+.carousel-indicators-img.active{
+    border: 3px solid white;
+
+}
+
+@media (max-width:991px) {
+    header{
+        height: auto;
+    }
+    .carousel  .carousel-item{
+        height: 400px!important;
+    }
+    .carousel{
+        height: 490px!important;
+
+    }
+
+  
+}

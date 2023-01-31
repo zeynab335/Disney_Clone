@@ -1,0 +1,46 @@
+[
+    {
+        "url" : "../Assets/Images/Header/Avatar.jpeg",
+        "title" : "../Assets/Images/Header/Title/avatar.png",
+        "year" : 2022,
+        "duration" : "38m",
+        "languages": "English",
+        "availableTo": "13+",
+        "category":" Documetary",
+        "class":"active"
+    },
+    {
+        "url" : "../Assets/Images/Header/ExatraOrdinary.jpeg",
+        "title" : "../Assets/Images/Header/Title/Extra.png",
+        "year" : 2023,
+        "duration" : "1h 47m",
+        "languages": "10 Languages",
+        "availableTo": "18+",
+        "category":" Superhero | Comedy",
+        "class":""
+
+    },
+    {
+        "url" : "../Assets/Images/Header/Darby.jpeg",
+        "title" : "../Assets/Images/Header/Title/darpy.png",
+        "year" : 2022,
+        "duration" : "1h 40m",
+        "availableTo": "16+",
+        "languages": "5 Languages",
+        "category":" Fantasy | Comedy | Coming of Age",
+        
+        "class":""
+        
+    },
+    {
+        "url" : "../Assets/Images/Header/Menu.jpeg",
+        "title" : "../Assets/Images/Header/Title/Menu.png",
+        "year" : 2022,
+        "duration" : "1h 47m",
+        "availableTo": "18+",
+        "languages": "English",
+        "class":"",
+        "category":" Horror | Comedy"
+
+    }
+]
