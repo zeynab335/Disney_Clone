@@ -16,9 +16,9 @@ const response = fetch('../Data/data.json').then(function(response){
                     <div class="carousel-item-overlay"> </div> 
                     <div class="carousel-item ${element.class ? element.class: ''}">
                         <img src=${element.url} class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-md-block">
                             <img  src=${element.title} class="d-block position-absoulte" alt="..." />
-                            <div>
+                            <div class="carousel-item-container">
                                 <span class="h5">${element.year}</span>
                                 <span class="h5">${element.duration}</span>
                                 <span class="h5">${element.languages}</span>
@@ -27,8 +27,11 @@ const response = fetch('../Data/data.json').then(function(response){
 
                             </div>
                             <div class="d-flex w-100 ">
-                                <button class="subsribe btn btn-light me-2 py-4 mt-3 fs-3 "> Subscripe to Watch </button>
-                                <button class="add-to-Fav btn btn-dark fs-1 px-4 py-0 my-0" > + </button>
+                                <button class="subsribe btn btn-light me-2 py-4 fs-4 "> 
+                                <i class="bi bi-caret-right-fill"></i>
+                                Watch Now
+                                </button>
+                                <button class="add-to-Fav btn btn-light fs-1 py-0 my-0" > + </button>
                             </div>
                         </div>
                     </div>

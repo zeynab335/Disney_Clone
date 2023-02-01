@@ -1,15 +1,67 @@
 header{
     height: 80vh;
+    width: 100%;
 }
 
+
+
+/* * Navlinks */
+.navLinks{
+    width: 18%;
+    z-index: 100;
+    transition: all 2s;
+    height: 100%!important;
+}
+
+header .logo{
+    width: 75px;
+    height: 75px;
+}
+
+header .profile{
+    width: 30px;
+    height: 30px;
+}
+
+header .navLinks .Account{margin-left: 15px;}
+header .navLinks i{color: #9F9F9F; padding-left: 15px;}
+
+header .navLinks i.active{color:white;}
+
+.navLinks div{cursor: pointer; transition: all 0.2s;}
+
+.navLinks:hover {
+    background-image: linear-gradient(to right,  rgba(120, 116, 116, 0.1) , rgba(85, 85, 85, 0));
+}
+.navLinks:hover div p{
+    visibility: visible;
+}
+.navLinks div:hover {
+    margin-left: 15px;
+}
+.navLinks div p{visibility: hidden;}
+
+
+.header-subscribe{
+    color:#ffcc75;
+    background: rgb(128, 72, 0 , 0.2);
+    margin-bottom: 10px;
+    width: 55%;
+    margin-left: 10px;
+}
+
+/* * Carousel */
 .carousel{
     height: 750px!important;
+    width: 100%;
     position: relative;
     padding-left: 100px;
 }
 .carousel  .carousel-item{
     height: 700px!important;
+    position: relative;
 }
+
 .carousel-item-overlay{
     width: 100%;
     height: 100%;
@@ -23,9 +75,10 @@ header{
 .carousel-caption{
     z-index: 100;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: -20px;
     width: 40%;
+    
 }
 
 .carousel-caption div{
@@ -46,16 +99,26 @@ header{
 }
 
 .subsribe{
-    width: 85%!important;
+    width: 400px!important;
+    padding: 8px 5px!important;
+    background-color: hsla(0,0%,100%,.08);
+    color: white;
+    border: 0;
 }
 
 
+.add-to-Fav{
+    width: 60px;
+    text-align: center;
+    background-color: hsla(0,0%,100%,.08);
+    color: white;
+    border: 0;
+}
 
 .carousel-caption span {
     position: relative;
     padding-right: 5px;
     margin: 50px 10px 50px 10px ;
-
 }
 
 .carousel-caption span:not(span:last-of-type):after {
@@ -91,7 +154,6 @@ header{
     opacity: 1;   
 }
 
-
 .carousel-indicators-img{
     width: 100%;
     margin-left: 20px;
@@ -118,6 +180,21 @@ header{
         height: 490px!important;
 
     }
+}
 
-  
+
+.carousel-caption div , .carousel-item-container{
+    animation-name: animateTop;
+    transition: all 2s;
+    animation-duration: 2s;
+}
+
+
+@keyframes animateTop{
+    0%{
+        bottom: -20%;
+    }
+    100%{
+        bottom: 0%;
+    }
 }
