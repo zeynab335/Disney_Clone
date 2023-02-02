@@ -3,9 +3,6 @@ $(function(){
     $('#Index').load('./Html/Login/Login.html');
     
     // $('#Header').load('./Html/Header.html');
-
-    
-   
 })
 
 

@@ -3,8 +3,6 @@ header{
     width: 100%;
 }
 
-
-
 /* * Navlinks */
 .navLinks{
     width: 18%;
@@ -51,18 +49,18 @@ header .navLinks i.active{color:white;}
 }
 
 /* * Carousel */
-.carousel{
+header .carousel{
     height: 750px!important;
     width: 100%;
     position: relative;
     padding-left: 100px;
 }
-.carousel  .carousel-item{
+header .carousel  .carousel-item{
     height: 700px!important;
     position: relative;
 }
 
-.carousel-item-overlay{
+header .carousel-item-overlay{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -72,7 +70,7 @@ header .navLinks i.active{color:white;}
     color: white;
 }
 
-.carousel-caption{
+header .carousel-caption{
     z-index: 100;
     position: absolute;
     top: 25%;
@@ -81,24 +79,24 @@ header .navLinks i.active{color:white;}
     
 }
 
-.carousel-caption div{
+header .carousel-caption div{
     padding: 10px;
     text-align: left;
     margin-left: 100px;
 }
-.carousel-caption img{
+header .carousel-caption img{
     padding-left: 100px;
     margin-bottom: 50px;
     width: 100%!important;
     max-height: 40%;
 }
 
-.carousel-caption p {
+header .carousel-caption p {
     display: inline-block;
     margin-top: 15px;
 }
 
-.subsribe{
+header .subsribe{
     width: 400px!important;
     padding: 8px 5px!important;
     background-color: hsla(0,0%,100%,.08);
@@ -107,7 +105,7 @@ header .navLinks i.active{color:white;}
 }
 
 
-.add-to-Fav{
+header .add-to-Fav{
     width: 60px;
     text-align: center;
     background-color: hsla(0,0%,100%,.08);
@@ -115,13 +113,13 @@ header .navLinks i.active{color:white;}
     border: 0;
 }
 
-.carousel-caption span {
+header .carousel-caption span {
     position: relative;
     padding-right: 5px;
     margin: 50px 10px 50px 10px ;
 }
 
-.carousel-caption span:not(span:last-of-type):after {
+header .carousel-caption span:not(span:last-of-type):after {
     content: " ";
     position: absolute;
     top: 15px;
@@ -131,40 +129,40 @@ header .navLinks i.active{color:white;}
     background-color: white;
     margin-left: 10px;
 }
-.carousel-caption .category{
+header .carousel-caption .category{
     display: block;
     margin-top: 25px;
 }
-.carousel-caption .availableTo { 
+header .carousel-caption .availableTo { 
     background-color: hsla(0,0%,100%,.08);
     border-radius: 10px;
     padding: 6px;
 }
 
-.carousel-indicators{
+header .carousel-indicators{
     width: 95%;
     margin-left: 0!important;
     margin-right: 0!important;
     justify-content: flex-end!important;
 }
-.carousel-indicators [data-bs-target]{
+header .carousel-indicators [data-bs-target]{
     width: 100px;
     height: 200px;
     background: none;
     opacity: 1;   
 }
 
-.carousel-indicators-img{
+header .carousel-indicators-img{
     width: 100%;
     margin-left: 20px;
     border-radius: 10px;
     transition: all 1s;
 
 }
-.carousel-indicators-img:hover{
+header .carousel-indicators-img:hover{
     transform: scale(1.09) translatey(-10px);
 }
-.carousel-indicators-img.active{
+header .carousel-indicators-img.active{
     border: 3px solid white;
 
 }
@@ -173,17 +171,17 @@ header .navLinks i.active{color:white;}
     header{
         height: auto;
     }
-    .carousel  .carousel-item{
+    header .carousel  .carousel-item{
         height: 400px!important;
     }
-    .carousel{
+    header .carousel{
         height: 490px!important;
 
     }
 }
 
 
-.carousel-caption div , .carousel-item-container{
+header .carousel-caption div , .carousel-item-container{
     animation-name: animateTop;
     transition: all 2s;
     animation-duration: 2s;
