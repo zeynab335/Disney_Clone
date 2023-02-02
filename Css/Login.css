@@ -1,4 +1,39 @@
 .Login{
     background-color: #0F1014;
     height: 100vh;
+    padding: 45px 10px;
+}
+
+.Login .Logo img{
+    width: 150px;
+    height: 70px;
+}
+
+.Login .login-container{
+    margin-top: 250px;
+}
+.Login .Account-Icon{
+    width: 150px;
+}
+
+.Login .login-container span{
+    color: #8e8e8e!important;
+}
+
+.Login .add-new-account{
+    background-color: #262833;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.Login .add-new-account i{ font-size: 60px;}
+
+.Login .login-container > div div{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.Login .login-container > div div:hover{
+    transform: scale(1.05);
 }
