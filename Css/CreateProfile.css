@@ -1,5 +1,37 @@
 .create-profile{
     background-color: #0F1014;
     height: 100vh;
-    padding: 45px 10px;
+    padding: 100px 10px;
+
+}
+
+.create-profile .Cancel{
+    color: #1F86DB;
+}
+.carousel-register{
+    height: 30vh!important;
+    margin-top: 150px;
+    padding-top: 50px;
+}
+
+.carousel-inner-register{
+    justify-content: center;
+    align-items: center;
+}
+.carousel-inner-register img{
+    width: 100px;
+    margin-left: 25px;
+}
+
+
+.carousel-register .carousel-item{
+    background-color: saddlebrown;
+    display: flex;
+    justify-content: center; 
+    align-items: center ;
+    width: 100%;
+    position: relative!important;
+}
+.carousel-register .carousel-item img{
+    width: 100px;
 }
