@@ -9,29 +9,76 @@
     color: #1F86DB;
 }
 .carousel-register{
-    height: 30vh!important;
-    margin-top: 150px;
+    /* height: 30vh!important; */
+    margin-top: 100px;
     padding-top: 50px;
 }
 
 .carousel-inner-register{
-    justify-content: center;
-    align-items: center;
-}
-.carousel-inner-register img{
-    width: 100px;
-    margin-left: 25px;
-}
-
-
-.carousel-register .carousel-item{
-    background-color: saddlebrown;
-    display: flex;
-    justify-content: center; 
-    align-items: center ;
-    width: 100%;
+    width: 98vw;
+    padding: 20px 0px 50px 0px;
     position: relative!important;
+    
 }
-.carousel-register .carousel-item img{
-    width: 100px;
+.carousel-items-register{
+    display: flex;
+    width: 97%;
+    padding: 50px 0px 50px 10px;
+    overflow-x: scroll;
+    
+    
+
+}
+.carousel-items-register::-webkit-scrollbar { width: 0 !important }
+
+
+.carousel-inner-register img{
+    width: 120px;
+    margin-left: 70px;
+    transition: all 1s;
+    cursor: pointer;
+    position: relative;
+}
+.carousel-inner-register img:hover{
+    transform: scale(1.3);
+}
+
+.Register-arrows .left , .Register-arrows .right {
+    color: #FFFFFC!important;
+    position: absolute!important;
+    top : 60px;
+    /* padding: 20px; */
+    cursor: pointer;
+    width: 50px!important;
+    left: 0;
+}
+
+.Register-arrows .right {right: 15px;}
+
+
+.active{
+    border: 2px solid #FFFFFC;
+    padding: 5px;
+    border-radius: 50%;
+    transform: scale(1.8);
+}
+.carousel-inner-register img.active::after{
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.ProfileName{
+    background: none;
+    border-color: #4D5166;
+    width: 30%;
+}
+.ProfileName::placeholder{
+    color: #4D5166;
 }
