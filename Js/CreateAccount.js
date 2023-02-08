@@ -52,16 +52,18 @@ images.forEach((e)=>{
         e.classList.add("active");
 
 
-        document.querySelector('.Register-arrows .arrow-right').addEventListener('click', () => {
-            inner.scrollLeft += 100
-            console.log(inner.scrollLeft)
-        })
-
-        document.querySelector('.Register-arrows .arrow-left').addEventListener('click', () => {
-            inner.scrollLeft -= 100;
-            console.log(inner.scrollLeft)
-        })
+        
     }
 
+})
+
+
+document.querySelector('.Register-arrows .arrow-left').onClick = () => {
+    console.log("djdj")
+    inner.scrollLeft -= 200;
+}
+
+document.querySelector('.Register-arrows .arrow-right > img').addEventListener('click', () => {
+    inner.scrollLeft += 200
 })
 
