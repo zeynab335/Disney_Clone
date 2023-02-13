@@ -1,11 +1,8 @@
 <div class="create-profile">
     <div class="create-profile-header">
-        <div class="d-flex justify-content-center w-100">
-            <h1 class="text-center text-light h2 flex-grow-1"> Create Profile</h1>
-            <span class="text-light me-5 pe-5 pt-2 "> 
-                <span class="fs-5 pl-4 Cancel" id="cancel-new-account">Cancel</span>
-                 
-            </span>
+        <div class="position-relative">
+            <h1 class="text-center text-light pl-5 h2 flex-grow-1"> Create Profile</h1>
+            <span class="text-light me-1 pt-2 position-absolute Cancel fs-5" id="cancel-new-account">Cancel</span>
         </div>
     </div>
     
@@ -16,7 +13,6 @@
             
             <div class="Register-arrows">
            
-               
                 <div class="arrow-left fs-1 ">
                     <img src="../../Assets/Images/Left.png" class="left"/>
                 </div>
@@ -27,18 +23,53 @@
             </div>
 
             
-                <div class="row justify-content-center align-items-center w-100">
-                    <input class="ProfileName form-control p-3 my-5 col-md-12" placeholder="Profile Name" id="ProfileNameHandler"/> 
-                </div>
-                <div class="row justify-content-center align-items-center ">
-                    <div class="col-md-3 bg-light">
-                        <p> Is this for Kids? </p>
-                        <p> Content rated 7+ & below</p>
+                <div class="m-auto create-profile-data">
+                    <input class="ProfileName form-control p-3 my-5 w-100" placeholder="Profile Name" id="ProfileNameHandler"/> 
+                    <div class="ProfileDetails row">
+                        <div class="row mb-2">
+                            <div class="col-11 ">
+                                <p class="text-light fs-5 pb-0 mb-0"> Is this for Kids? </p>
+                                <p class="text-secondary fs-5"> Content rated 7+ & below</p>
+                            </div>
+                            <div class="col-1 position-relative">
+                                <span class="btn-toggle w-100"></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mb-2">
+                            <div class="col-11">
+                                <p class="text-light fs-5 pb-0 mb-0"> Select Content Rating </p>
+                                <p class="text-secondary fs-5"> You will see content rated up to</p>
+                            </div>
+                            <div class="col-1 position-relative ">
+                                <!-- <span class="btn-toggle w-100"></span> -->
+                                <span class="form-select Rating border-0 text-light fs-6" >
+                                    <span class="px-1" > +18  </span>
+                                    <i class="bi bi-caret-down-fill d-inline-block "></i>
+                                </span>
+                                <div class="rating-container">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr>
+                        <div class="row mb-2">
+                            <div class="col-11 ">
+                                <p class="text-light fs-5 pb-0 mb-0"> Set a Parental Lock ? </p>
+                                <p class="text-secondary fs-5"> Restrict access to adult profiles with a PIN</p>
+                            </div>
+                            <div class="col-1 position-relative">
+                                <span class="btn-toggle w-100"></span>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary btn mt-5 p-3 fs-5 disabled"> Create Profile</button>
+                        
                     </div>
-                    <div class="col-md-1">
-                        <input type="radio" class="form-control w-100"/>  
-                    </div>
+                    
+                
                 </div>
+               
                     
                
              
