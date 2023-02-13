@@ -1,21 +1,27 @@
 .create-profile{
     background-color: rgb(15, 16, 20);
-    height: 100vh;
+    min-height: 100vh;
     padding: 100px 10px;
 
 }
 
 .create-profile .Cancel{
-    color: #1F86DB;
+    color: #1F86DB!important;
+    top: 0;
+    right: 30px;
+    cursor: pointer;
 }
 .carousel-register{
-    /* height: 30vh!important; */
     margin-top: 100px;
     padding-top: 50px;
 }
 
 .carousel-inner-register{
     width: 98vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px 0px 50px 0px;
     position: relative!important;
     background-color: rgba(15,16,20,0.9);
@@ -23,7 +29,7 @@
 }
 .carousel-items-register{
     display: flex;
-    width: 94%;
+    width: 93%;
     margin-left: 4%;
     
     padding: 50px 0px 50px 10px;
@@ -82,7 +88,10 @@
     right: -39px;
     opacity: 0.9;
 }
-
+.carousel-inner-register .carousel-items-register .activeIcon.edit{
+    background-color: #0646D1!important;
+    color:  white!important;
+}
 .ProfileName{
     background: none;
     border-color: #4D5166;
@@ -109,4 +118,62 @@
     width: 40px!important;
     height: 40px!important;
     padding: 20px!important;
+    cursor: pointer;
+}
+
+.ProfileDetails{
+    display: none;
+    position: relative!important;
+}
+
+.btn-toggle{cursor: pointer;}
+.btn-toggle::after{
+    background-color: #262833;
+    width: 50px!important;
+    height: 25px!important;
+    content: '';
+    border: 5px;
+    position: absolute;
+    border-radius: 20px;
+    
+}
+
+.btn-toggle::before{
+    position: absolute;
+    width: 25px!important;
+    height: 25px!important;
+    background-color: #CCE8FF;
+    border-radius: 100%;
+    content: '';
+    border: 5px;
+    z-index: 5555;
+    left: 13px;
+}
+.btn-toggle.active::before{right: -35px; left: auto;}
+.btn-toggle.active::after{background-color: #0646D1!important;}
+
+.create-profile-data{width: 30%!important;}
+
+.Rating{
+    width: 80px;
+    position: absolute;
+    background: none;
+    right: -25px;
+    top: 18px;
+}
+
+.rating-container{
+    position: absolute;
+    /* display: none; */
+    background-color: #101216;
+    width: 500px;
+    top: 85px;
+    left: -420px;
+    z-index: 10005;
+    min-height: 200px;
+
+}
+
+@media (max-width:992px) {
+    .create-profile-data{width: 60%!important;}
 }
