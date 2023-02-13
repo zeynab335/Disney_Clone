@@ -66,16 +66,21 @@
     border-radius: 50%;
     transform: scale(1.8);
 }
-.carousel-inner-register .carousel-items-register img.active::after{
-    content: '';
-    width: 200px;
-    height: 200px;
-    background-color: white;
+.carousel-inner-register .carousel-items-register div{position: relative;}
+.carousel-inner-register .carousel-items-register .activeIcon{
+   
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #E1E6EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     border: 2px solid white;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -35px;
+    right: -39px;
+    opacity: 0.9;
 }
 
 .ProfileName{
@@ -85,4 +90,23 @@
 }
 .ProfileName::placeholder{
     color: #4D5166;
+}
+
+.edit-Active-Img-Position{
+    justify-content: center;
+    padding-top: 0 !important ;
+    padding-bottom:0 !important ;
+
+}
+
+.edit-Active-Img-Position .active{
+    transform: scale(1.01);
+}
+
+.edit-Active-Img-Position .activeIcon{
+    bottom: 0px!important;
+    right: 0px!important;
+    width: 40px!important;
+    height: 40px!important;
+    padding: 20px!important;
 }
