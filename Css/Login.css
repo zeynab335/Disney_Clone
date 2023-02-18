@@ -1,6 +1,6 @@
 .Login{
     background-color: #0F1014;
-    height: 100vh;
+    min-height: 100vh;
     padding: 45px 10px;
 }
 
@@ -29,11 +29,25 @@
 }
 
 .Login .add-new-account i{ font-size: 60px;}
-
-.Login .login-container > div div{
+.Login .login-container .isLoggedAccount div:hover , .add-new-account-container:hover{
     transition: all 0.5s;
     cursor: pointer;
+    transform: scale(1.08);
+
 }
-.Login .login-container > div div:hover{
-    transform: scale(1.05);
+.Login .login-container .add-new-account-container:hover{
+    transform: scale(1.08);
+}
+
+
+@media (max-width:992px)    
+{
+    .Login .Accounts , .isLoggedAccount{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Login .Accounts div{
+            margin-bottom: 20px;
+        }
 }

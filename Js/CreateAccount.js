@@ -1,6 +1,9 @@
 
 var CreateNewAccount = document.getElementById("cancel-new-account");
 
+// global variable
+let usrImgSrc = ""
+
 if(CreateNewAccount){
     CreateNewAccount.onclick = function(){
         location.href = "/Index.html?login";
@@ -50,6 +53,9 @@ document.querySelector('.Register-arrows .arrow-right > img').addEventListener('
     inner.scrollLeft += 200
 })
 
+$(function(){
+    $('#profile-settings').load('./Html/Register/ProfileSetting.html');
+})
 
 
 //* Profile Name
@@ -60,9 +66,13 @@ document.getElementById('ProfileNameHandler').addEventListener( 'focus' ,() =>{
             e.remove();
         }
     });
+    
+    //* add profile image to localstorage
+    usrImgSrc = inner.children[0].children[0].getAttribute('src');
 
     document.querySelector('.ProfileDetails').style.display = "flex"
     document.querySelector('.carousel-register').style.marginTop = "10px"
+    document.querySelector('.btn-create-profile').style.display = "block"
     
     inner.classList.add('edit-Active-Img-Position')
     inner.children[0].childNodes[1].classList.replace('fa-check' , 'fa-pencil')
@@ -70,8 +80,19 @@ document.getElementById('ProfileNameHandler').addEventListener( 'focus' ,() =>{
 
     document.querySelector('.Register-arrows').style.display = 'none';
 
-
 })
+
+//* check if profile name not empty
+document.getElementById('ProfileNameHandler').onchange = function(){
+    var btn =  document.querySelector('.btn-create-profile');
+    if(this.value !== ""){
+       btn.removeAttribute('disabled');
+    }
+    else{
+        btn.setAttribute('disabled',true)
+    }
+}
+
 
 //* go to change image
 inner.addEventListener('click',()=>{
@@ -83,7 +104,7 @@ inner.addEventListener('click',()=>{
         inner.classList.remove('edit-Active-Img-Position')
         inner.children[0].childNodes[1].classList.replace('fa-pencil','fa-check')
         inner.children[0].childNodes[1].classList.remove('edit');
-
+        document.querySelector('.btn-create-profile').style.display  = "none";
         LoadSlider(inner.children[0].childNodes[0]);
 
     }
@@ -92,7 +113,6 @@ inner.addEventListener('click',()=>{
         images.forEach((e)=>{
     
             e.onclick = () =>{
-                console.log("Ss")
                 var elements = Array.from(e.parentNode.parentNode.children)
                 var index = elements.findIndex((e)=>e.childNodes[0].classList.contains('active'));
                 
@@ -110,10 +130,7 @@ inner.addEventListener('click',()=>{
                 
                 icon = document.createElement("i")
                 icon.setAttribute('class','fa-solid fa-check fs-3 activeIcon')
-                
-                e.parentElement.append(icon)
-        
-                
+                e.parentElement.append(icon)                
             }
         
         })
@@ -123,20 +140,25 @@ inner.addEventListener('click',()=>{
     
 })
 
-//* toggle Icon
 
-var btnToggle = document.querySelectorAll('.btn-toggle');
-btnToggle.forEach((btn)=>{
-
-    btn.onclick =()=>{
-        btn.classList.toggle('active');
+//* submit 
+document.querySelector('.btn-create-profile').onclick = function(){
+    usrname = document.getElementById('ProfileNameHandler').value
+    let usr = {usrname , imgSrc: usrImgSrc};
+    //* get all objects from localstoge
+    if(JSON.parse(localStorage.getItem('Accounts'))){
+        allUsrs = [...JSON.parse(localStorage.getItem('Accounts')) , usr];   
     }
-    
-})
+    else{
+        allUsrs = [usr]
+    }
 
+    //* set usename into localstorage
+    localStorage.setItem('Accounts' , JSON.stringify(allUsrs) );
+    Toastify({
 
-//*rating-container
-
-document.querySelector('.Rating').addEventListener('click',function(){
-    document.querySelector('.rating-container').style.display = 'block'
-})
+        text: "Added Successfully ❤✅",
+        duration: 3000
+        
+    }).showToast();
+}

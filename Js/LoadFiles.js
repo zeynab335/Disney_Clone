@@ -9,7 +9,7 @@ $(function(){
 var isCreatedAccount = location.search == "?create-account";
 if(isCreatedAccount){
     window.addEventListener("load", function(){
-        $('#Index').load('./Html/Login/CreateProfile.html');
+        $('#Index').load('./Html/Register/CreateProfile.html');
     });
 }
 
