@@ -7,6 +7,10 @@ if(Login){
     }
 }
 
+document.getElementById('logo').addEventListener('click' ,function(){
+    location.href = "/Index.html";
+
+})
 
 // let usr       = localStorage.getItem('username');
 let Accounts = localStorage.getItem('Accounts');
@@ -28,3 +32,10 @@ if(AllAccounts){
     
 
 }
+
+
+// res = fetch("https://api.disneyapi.dev/characters")
+// res.then(
+//     e=> e.json()
+// ).then(d => console.log(d.data))
+// console.log()

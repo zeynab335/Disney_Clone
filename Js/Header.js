@@ -51,9 +51,7 @@ const response = fetch('../Data/data.json').then(function(response){
         var list = document.querySelectorAll('.carousel-indicators-img');
         for(var i=0 ; i<list.length ; i++){
             list[i].onclick = function(){
-                this.classList.add('active');
-                this.style.border ="2px solid white" ;
-                  
+                this.classList.add('active');                  
                 var allSiblings = this.parentNode.parentNode.children;
 
                 for (const key in allSiblings) {
@@ -61,7 +59,7 @@ const response = fetch('../Data/data.json').then(function(response){
                         var active = allSiblings[key].classList.contains('active')
                         if(!active)  
                         {
-                            
+                            allSiblings[key].children[0].classList.remove('active')
                         }
                     }
                }
