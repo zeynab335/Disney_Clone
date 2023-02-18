@@ -66,7 +66,7 @@
 .Register-arrows img {width: 40px;}
 
 
-.active{
+.carousel-inner-register .active{
     border: 2px solid #FFFFFC;
     padding: 5px;
     border-radius: 50%;

@@ -22,3 +22,9 @@ if(isCreatedAccount){
 }
 
 
+var homePage = location.search == "";
+if(homePage){
+    window.addEventListener("load", function(){
+        $('#Index').load('./Html/Header.html');
+    });
+}
