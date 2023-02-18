@@ -42,5 +42,109 @@
         "class":"",
         "category":" Horror | Comedy"
 
+    },
+    {
+        "url" : "../Assets/Images/Content/Encanto.png",
+        "title" : "../Assets/Images/Content/logo/Encanto.png",
+        "year" : 2021,
+        "duration" : "1h 50m",
+        "availableTo": "7+",
+        "languages": "10 Languages",
+        "details" : "Mirabel discovers she may be the key to saving the magic that surrounds her extraordinary family.",
+        "class":"",
+        "category":" Fantasy | Animation | Family | Musical",
+        "type" : "disney"
+
+    },
+    {
+        "url" : "../Assets/Images/Content/luca.png",
+        "title" : "../Assets/Images/Content/logo/luca.png",
+        "year" : 2021,
+        "duration" : "1h 41m",
+        "availableTo": "7+",
+        "languages": "10 Languages",
+        "class":"",
+        "details" : "Join Luca, a young sea monster, as he experiences an unforgettable summer on the Italian Riviera.",
+        "category":" Fantasy | Animation | Family | Coming of Age",
+        "type" : "disney"
+
+    },
+    {
+        "url" : "../Assets/Images/Content/coco.png",
+        "title" : "../Assets/Images/Content/logo/coco.png",
+        "year" : 2017,
+        "duration" : "1h 45m",
+        "availableTo": "7+",
+        "languages": "3 Languages",
+        "class":"",
+        "details" : "Miguel journeys to the magical land of his ancestors.",
+        "category":" Fantasy | Animation | Family | Musical",
+        "type" : "disney"
+
+    },
+    {
+        "url" : "../Assets/Images/Content/red.png",
+        "title" : "../Assets/Images/Content/logo/red.png",
+        "year" : 2022,
+        "duration" : "1h 41m",
+        "availableTo": "13+",
+        "languages": "8 Languages",
+        "class":"",
+        "details" : "Mei tries to balance friends, family, and an uncontrollable ability to poof into a giant red panda.",
+        "category":" Fantasy | Animation | Family | Coming of Age",
+        "type" : "disney"
+
+    },
+    {
+        "url" : "../Assets/Images/Content/raya.png",
+        "title" : "../Assets/Images/Content/logo/raya.png",
+        "year" : 2021,
+        "duration" : "1h 55m",
+        "availableTo": "7+",
+        "languages": "11 Languages",
+        "class":"",
+        "details" : "Raya seeks the legendary last dragon to stop the evil threatening humanity.",
+        "category":" Fantasy | Animation | Family",
+        "type" : "disney"
+
+    },
+    {
+        "url" : "../Assets/Images/Content/brave.png",
+        "title" : "../Assets/Images/Content/logo/brave.png",
+        "year" : 2012,
+        "duration" : "1h 36m",
+        "availableTo": "7+",
+        "languages": "11 Languages",
+        "class":"",
+        "details" : "Princess Merida must undo a beastly curse before it’s too late.",
+        "category":" Fantasy | Animation | Family | Coming of Age",
+        "type" : "disney"
+
+    },
+    {
+        "url" : "../Assets/Images/Content/frozen.png",
+        "title" : "../Assets/Images/Content/logo/frozen.png",
+        "year" : 2019,
+        "duration" : "1h 48m",
+        "availableTo": "7+",
+        "languages": "22 Languages",
+        "class":"",
+        "details" : "Elsa journeys into the unknown to uncover truths about the past.",
+        "category":" Fantasy | Animation | Family | Musical",
+        "type" : "disney"
+
+    },
+    {
+        "url" : "../Assets/Images/Content/mermaid.png",
+        "title" : "../Assets/Images/Content/logo/mermaid.png",
+        "year" : 1989,
+        "duration" : "1h 28m",
+        "availableTo": "7+",
+        "languages": "28 Languages",
+        "class":"",
+        "details" : "Dive into Disney fun with Ariel in The Little Mermaid.",
+        "category":" Fantasy | Animation | Family | Romance",
+        "type" : "disney"
+
     }
 ]
