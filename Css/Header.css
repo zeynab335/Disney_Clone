@@ -1,8 +1,8 @@
 header{
-    height: 80vh;
+    height: auto;
     width: 100%;
+    background-color: #000203;
 }
-
 /* * Navlinks */
 .navLinks{
     width: 18%;
@@ -43,9 +43,18 @@ header .navLinks i.active{color:white;}
 .header-subscribe{
     color:#ffcc75;
     background: rgb(128, 72, 0 , 0.2);
+    border-color: rgb(128, 72, 0 , 0.2);
+
+    border-radius: 20px!important;
+    margin: 0px;
     margin-bottom: 10px;
-    width: 55%;
-    margin-left: 10px;
+    width: 40%;
+    font-size: 12px;
+    padding: 0;
+}
+.header-subscribe .bi-caret-right-fill{
+    color: rgb(128, 72, 0 )!important;
+    padding-left: 0px!important;
 }
 
 /* * Carousel */
@@ -66,7 +75,7 @@ header .carousel-item-overlay{
     position: absolute;
     top: 0;
     right: 0;
-    background-image: linear-gradient(to right,  rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right,  rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0));
     color: white;
 }
 
@@ -102,6 +111,7 @@ header .subsribe{
     background-color: hsla(0,0%,100%,.08);
     color: white;
     border: 0;
+    border-radius: 10px!important;
 }
 
 
@@ -147,7 +157,8 @@ header .carousel-indicators{
 }
 header .carousel-indicators [data-bs-target]{
     width: 100px;
-    height: 200px;
+    height: 100px;
+    margin-bottom: 20px;
     background: none;
     opacity: 1;   
 }
@@ -168,20 +179,55 @@ header .carousel-indicators-img.active{
 }
 
 @media (max-width:991px) {
-    header{
-        height: auto;
+   
+    .header-subscribe{
+        min-width: 120px!important;
     }
-    header .carousel  .carousel-item{
-        height: 400px!important;
-    }
-    header .carousel{
-        height: 490px!important;
 
-    }
+    .header .subsribe{min-width: 250px!important;}
+   
 }
 
+@media (max-width:576px)
+{
+    .carousel-item-container{
+        display: flex;
+    }
+    header .carousel{
+        padding-left: 0!important;
+    }
+    header .subsribe{
+        width: 210px!important;
+
+    }
+.btn-watch{
+    width: 500px!important;
+}
+    header .carousel-caption img{
+        padding-top:39px!important;
+        width: 300px!important;
+        margin-bottom: 0px!important;
+    }
+    header .carousel-caption .category {
+        display: block!important;
+    }
+     
+}
+
+@media  (min-width:576px) and (max-width:991px) {
+    header .carousel-caption {
+        z-index: 100;
+        position: absolute;
+        top: 5%;
+        left: -58px;
+        width: 60%;
+    }
+    /* header .carousel-caption div:last-of-type{flex-direction: column;} */
+
+}
 
 header .carousel-caption div , .carousel-item-container{
+    width: max-content;
     animation-name: animateTop;
     transition: all 2s;
     animation-duration: 2s;
