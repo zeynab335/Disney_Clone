@@ -12,9 +12,10 @@ const response = fetch('../Data/data.json').then(function(response){
         });
         carouselItems.forEach(element => {
             $('#carousel-header-inner').append(
-                    `
+                `
                     <div class="carousel-item-overlay"> </div> 
-                    <div class="carousel-item ${element.class ? element.class: ''}">
+                    <div class="carousel-item ${element.class ? element.class: ''}" 
+                    >
                         <img src=${element.url} class="d-block w-100" alt="...">
                         <div class="carousel-caption d-md-block">
                             <img  src=${element.title} class="d-block position-absoulte" alt="..." />
@@ -26,7 +27,7 @@ const response = fetch('../Data/data.json').then(function(response){
                                 <p class="category h5"> ${element.category   } </p>
 
                             </div>
-                            <div class="d-flex w-100 ">
+                            <div class="d-flex w-100 btn-watch ">
                                 <button class="subsribe btn btn-light me-2 py-4 fs-4 "> 
                                 <i class="bi bi-caret-right-fill"></i>
                                 Watch Now
@@ -37,6 +38,7 @@ const response = fetch('../Data/data.json').then(function(response){
                     </div>
                     `
             )}
+
         )
 
             
