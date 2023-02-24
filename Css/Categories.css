@@ -1,5 +1,5 @@
 .categories{
-    top: -60px;
+    top: -50px;
     position: relative;
     width: 90%;
     margin: auto;
@@ -12,17 +12,39 @@
     margin-left:20px;
     border-radius: 10px;
     cursor: pointer;
+    position: relative;
+    box-shadow: 2px 4px 9px #0F1014;
+    transition: all 1s;
 }
+.category-wrapper:hover{
+    transform: scale(1.09);
+}
+.categories div{
+    padding-left: 0!important;
+    padding-right: 0!important;
 
-.category-wrapper img , h1{
+}
+.category-wrapper img , h1 , video{
     position: static;
     top: 0;
     width: 100%;
     height: 100%;
-    
 }
+
+.category-wrapper img{
+    position: absolute;
+    z-index: 10000;
+    opacity: 1;
+}
+.category-wrapper video{
+    opacity:0;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
 .category-wrapper h1{
     color: white;
     text-align: center;
     line-height: 110px;
+    position: absolute;
 }
