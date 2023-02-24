@@ -1,9 +1,7 @@
 
-$(function(){
-    $('#Index').load('./Html/Login/Login.html');
-    
-    $('#Header').load('./Html/Header.html');
-})
+// $(function(){
+//     $('#Index').load('./Html/Login/Login.html');
+// })
 
 
 var isCreatedAccount = location.search == "?create-account";
