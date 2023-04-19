@@ -10,9 +10,7 @@
 ![image](https://user-images.githubusercontent.com/71345608/232974988-39f14c98-e5de-4dd6-9dcb-42b99745cf42.png)
 
 ## Create New Profile
-![image](https://user-images.githubusercontent.com/71345608/232975337-a7f13263-9373-480e-8b41-7ff3754ca7c4.png)
-
-![image](https://user-images.githubusercontent.com/71345608/232975387-277c0eb0-441a-4db9-9e23-d7436a570313.png)
+![image](https://user-images.githubusercontent.com/71345608/232976443-772deb75-e732-466a-9445-a1fb204d6b55.png)
 
 ![image](https://user-images.githubusercontent.com/71345608/232976331-13fbb42b-8698-48c5-b81f-9bf4d2d1a012.png)
 
