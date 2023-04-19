@@ -80,9 +80,9 @@ header .carousel-item-overlay{
 }
 
 header .carousel-caption{
-    z-index: 100;
+    z-index: 1000;
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: -20px;
     width: 40%;
     
@@ -91,12 +91,12 @@ header .carousel-caption{
 header .carousel-caption div{
     padding: 10px;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 130px;
 }
 header .carousel-caption img{
-    padding-left: 100px;
+    margin-left: 150px!important;
     margin-bottom: 50px;
-    width: 100%!important;
+    width: 80%!important;
     max-height: 40%;
 }
 
@@ -106,8 +106,8 @@ header .carousel-caption p {
 }
 
 header .subsribe{
-    width: 400px!important;
-    padding: 8px 5px!important;
+    width: 300px!important;
+    padding: 0px 5px!important;
     background-color: hsla(0,0%,100%,.08);
     color: white;
     border: 0;
@@ -156,8 +156,8 @@ header .carousel-indicators{
     justify-content: flex-end!important;
 }
 header .carousel-indicators [data-bs-target]{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     margin-bottom: 20px;
     background: none;
     opacity: 1;   
