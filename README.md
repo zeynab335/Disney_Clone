@@ -12,7 +12,8 @@
 ## Create New Profile
 ![image](https://user-images.githubusercontent.com/71345608/232976443-772deb75-e732-466a-9445-a1fb204d6b55.png)
 
-![image](https://user-images.githubusercontent.com/71345608/232976598-2e84a0c7-dacf-48ac-899a-f460db4a6ff3.png)
+![image](https://user-images.githubusercontent.com/71345608/232976659-7ee5f9ec-78c1-40de-895c-9e834a0949a5.png)
+
 
 
 
